@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Skip link */
+.skip {
+    position: absolute;
+    left: -999px;
+}
+.skip:focus {
+    left: 10px;
+    top: 10px;
+    background: white;
+    padding: 5px;
+    border: 1px solid #000;
+}
+
+/* Navigation */
+.nav {
+    display: flex;
+    gap: 15px;
+    background: #e0e0e0;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.nav a:hover {
+    text-decoration: underline;
+}
+
+/* Image Box Model */
+img {
+    border: 2px solid #333;
+    border-radius: 8px;
+    padding: 6px;
+}
+
+/* Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+/* Flex Layout */
+.flex {
+    display: flex;
+    gap: 15px;
+}
+
+/* nth-child example */
+.flex img:nth-child(2) {
+    border-radius: 30px;
+}
+
+/* Hover effect */
+.hover-effect:hover {
+    color: red;
+    font-size: 1.25em;
+    transition: 0.3s;
+}
